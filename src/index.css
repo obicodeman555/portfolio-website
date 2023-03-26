@@ -1,9 +1,6 @@
-:root {
-  --background-color: #091E26;
-}
-
 html {
   box-sizing: border-box;
+  font-size: 62.5%;
 }
 
 *,
@@ -20,7 +17,7 @@ body,
   height: 100%;
   font-family: 'Roboto', sans-serif;
   color: #323232;
-  background-color: var(--background-color);
+
   overflow-x: hidden;
 
 }

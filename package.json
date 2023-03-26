@@ -38,6 +38,7 @@
     ]
   },
   "devDependencies": {
+    "@iconify/icons-radix-icons": "^1.2.8",
     "@iconify/react": "^4.1.0"
   }
 }
