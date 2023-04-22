@@ -5,3 +5,8 @@
 .font-sm {
     font-size: 1.4rem
 }
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
