@@ -9,21 +9,26 @@ const About = () => {
             <header className="portfolio-header">
                 <Icon icon="ci:hamburger-lg" />
             </header>
+            <div className='ribbon'>
+                <Link to={""}>
+                    follow on github
+                </Link>
+            </div>
             <article className='about-me__text'>
-                <h1>
+                <h1 className='heading-1'>
                     <span>Good Morning,</span>
                     <span>My name is Obinna Ofe.</span>
                 </h1>
-                <p>
+                <p className='text-paragraph'>
                     I, have been involved in the software industry for
                     over 5 years, developing a complex line of business applications in various sectors.
 
                 </p>
-                <p>
-                    Furthermore, I have spent the last 5 years building single page applications using a wide range of
+                <p className='text-paragraph'>
+                    My expertise surrounds using a wide range of
                     JavaScript technologies, including Angular, ReactJS, VueJS, and TypeScript.
                 </p>
-                <p>
+                <p className='text-paragraph'>
                     Feel free to take a look at my latest projects on the &nbsp;
                     <Link to="/work" className='about-link'>web portfolio page</Link>.
                 </p>
@@ -53,13 +58,9 @@ const About = () => {
                 </li>
             </ul>
 
-            <div className='github-follow'>
-                <Link to={""}>
-                    follow on github
-                </Link>
-            </div>
-            <div className='link-to-page'>
-                <div className='inner'>
+
+            <div className='link-to-page point-right'>
+                <div className='link-to-page__inner'>
                     <Link to="/work">
                         <span>portfolio</span>
                     </Link>
