@@ -1,22 +1,24 @@
+import { Suspense, lazy } from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Loader } from './components/Loader';
 
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import { About, Contact, Work, Home } from "./pages"
-import { Body } from './styles';
-
+const About = lazy(() => import("./pages/About"));
+const Contact = lazy(() => import("./pages/Contact"))
+const Work = lazy(() => import("./pages/Work"))
 
 function App() {
   return (
-    <Router>
-      <Body>
-        <Routes>
-          <Route index element={<Home />} />
-          <Route path='/work' element={<Work />} />
-          <Route path='/about' element={<About />} />
-          <Route path='/contact' element={<Contact />} />
-
-        </Routes>
-      </Body>
-    </Router>
+    <>
+      <Suspense fallback={<Loader />}>
+        <Router>
+          <Routes>
+            <Route path='/' element={<About />} />
+            <Route path='work' element={<Work />} />
+            <Route path='contact' element={<Contact />} />
+          </Routes>
+        </Router>
+      </Suspense>
+    </>
   );
 }
 

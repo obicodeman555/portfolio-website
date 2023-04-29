@@ -1,13 +1,12 @@
-import { About } from "./About";
-import { Contact } from "./Contact";
+
 import { Work } from "./Work";
-import { Home } from "./Home";
-import "../css/helpers.css"
+import { Contact } from "./Contact";
+import { About } from "./About";
 
 
 export {
     About,
-    Contact,
     Work,
-    Home
+    Contact,
+
 }
