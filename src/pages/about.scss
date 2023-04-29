@@ -1,0 +1,236 @@
+@use "../sass/colors" as colors;
+
+main {
+    position: relative;
+    height: 100vh;
+    padding: 1rem;
+}
+
+.portfolio-header {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    top: 0;
+    right: 0;
+    left: 0;
+    padding: 3rem 3rem;
+
+    &>svg {
+        font-size: 5rem;
+    }
+}
+
+.about-me__text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+
+
+    &>h1 {
+        margin-bottom: 2rem;
+        font-size: 3rem;
+        color: colors.$color-grey-1;
+        font-weight: bolder;
+        font-family: 'Rammetto One', cursive;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &>p {
+
+        font-size: 1.75rem;
+
+        line-height: 1.7;
+        font-weight: 500;
+        margin-bottom: 1rem;
+    }
+}
+
+.about-link {
+    text-decoration: none;
+    color: colors.$color-grey-1;
+    font-weight: 800;
+}
+
+.socials {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 0;
+
+    &>li {
+        display: flex;
+        flex-direction: column;
+        transition: width 200ms ease-in;
+        width: 50px;
+        height: 50px;
+
+        &>a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+
+
+            padding: 1rem;
+
+            &>svg {
+                font-size: 4rem;
+                color: #fff;
+            }
+
+
+        }
+
+
+
+        &:hover {
+            width: 70px;
+
+            &>a>svg {
+                font-size: 3rem;
+                color: #fff;
+            }
+
+        }
+
+        &:first-child,
+        &:last-child {
+            background-color: colors.$primary-black-2;
+
+        }
+
+        &:nth-child(2) {
+            background-color: colors.$color-blue;
+        }
+    }
+}
+
+.github-follow {
+
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.5rem;
+    width: 600px;
+
+    transform: rotate(45deg);
+    position: fixed;
+    right: -200px;
+    top: 80px;
+
+
+    &>a {
+        padding: 1.5rem;
+        background-color: colors.$color-green-1;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: -2px 3px 1px rgba(0, 0, 0, .23);
+        transition: color 200ms ease-in;
+
+        &:hover {
+            background-color: darken($color: colors.$color-green-1, $amount: 10);
+        }
+    }
+}
+
+
+.link-to-page {
+    position: absolute;
+
+    right: 100px;
+    top: 50%;
+    display: flex;
+    flex-direction: column;
+
+    &>div {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+
+
+        &::before,
+        &:after {
+            content: "";
+            position: absolute;
+            height: 1.5px;
+            background-color: colors.$color-grey-1;
+            width: 40px;
+            cursor: pointer;
+        }
+
+        &::before {
+            transform: rotate(40deg);
+            top: -1px;
+            right: -20px;
+        }
+
+        &::after {
+            transform: rotate(-40deg);
+            top: 25px;
+            right: -20px;
+        }
+
+        &>a {
+            width: 100%;
+            height: 100%;
+            font-size: 1.75rem;
+            padding: 0 1rem;
+            font-weight: 900;
+            color: colors.$color-grey-1;
+            overflow: hidden;
+            display: flex;
+
+            &>span {
+                transform: translateX(100px);
+                transition: transform 200ms ease-in;
+            }
+
+
+
+
+        }
+
+        &:hover>a>span {
+            transform: translateX(0);
+            cursor: pointer;
+        }
+
+
+
+    }
+
+
+
+
+}
+
+
+.contact-me {
+    display: flex;
+    margin-top: 5rem;
+    max-width: max-content;
+
+    &>a {
+        font-size: 1.35rem;
+        text-transform: uppercase;
+        color: #fff;
+        background-color: #E7005E;
+        padding: 1.75rem 2rem;
+        width: 210px;
+        text-align: center;
+        font-weight: 800;
+        border-radius: 4px;
+    }
+}
