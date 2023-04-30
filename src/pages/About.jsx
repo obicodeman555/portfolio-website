@@ -16,22 +16,24 @@ const About = () => {
             </div>
             <article className='about-me__text'>
                 <h1 className='heading-1'>
-                    <span>Good Morning,</span>
+                    <span>Welcome,</span>&nbsp;
                     <span>My name is Obinna Ofe.</span>
                 </h1>
-                <p className='text-paragraph'>
-                    I, have been involved in the software industry for
-                    over 5 years, developing a complex line of business applications in various sectors.
+                <div className='mt-2'>
+                    <p className='text-paragraph'>
+                        I, have been involved in the software industry for
+                        over 5 years, developing a complex line of business applications in various sectors.
 
-                </p>
-                <p className='text-paragraph'>
-                    My expertise surrounds using a wide range of
-                    JavaScript technologies, including Angular, ReactJS, VueJS, and TypeScript.
-                </p>
-                <p className='text-paragraph'>
-                    Feel free to take a look at my latest projects on the &nbsp;
-                    <Link to="/work" className='about-link'>web portfolio page</Link>.
-                </p>
+                    </p>
+                    <p className='text-paragraph'>
+                        My expertise surrounds using a wide range of
+                        JavaScript technologies, including Angular, ReactJS, VueJS, and TypeScript.
+                    </p>
+                    <p className='text-paragraph'>
+                        Feel free to take a look at my latest projects on the &nbsp;
+                        <Link to="/work" className='about-link'>web portfolio page</Link>.
+                    </p>
+                </div>
 
                 <div className='contact-me'>
                     <Link to="mailto:obinnaukoofe@gmail.com">

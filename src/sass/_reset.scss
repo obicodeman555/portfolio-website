@@ -57,6 +57,10 @@ button {
 
         font-size: 3rem;
 
+        @media (max-width: 737px) {
+            font-size: 2.5rem;
+        }
+
     }
 
     &-3 {
@@ -68,6 +72,10 @@ button {
 .text-paragraph {
 
     font-size: 1.75rem;
+
+    @media (max-width: 737px) {
+        font-size: 1.5rem;
+    }
 
     line-height: 1.7;
     font-weight: 500;
@@ -82,7 +90,7 @@ img {
 
 .contact-me {
     display: flex;
-    margin-top: 5rem;
+    margin-top: 2rem;
     max-width: max-content;
 
     &>a {
@@ -95,6 +103,11 @@ img {
         text-align: center;
         font-weight: 800;
         border-radius: 4px;
+
+        @media (max-width: 1024px) {
+            width: 160px;
+            padding: 1.45rem 1.85rem;
+        }
 
         &.bg-green {
             background-color: colors.$color-green-2;
@@ -116,9 +129,17 @@ img {
     gap: 4rem;
 }
 
+.mt-2 {
+    margin-top: 2rem;
+}
+
 .link-to-page {
     position: absolute;
+    display: block;
 
+    @media (max-width: 737px) {
+        display: none;
+    }
 
     top: 50%;
     display: flex;
@@ -263,7 +284,7 @@ img {
     color: #fff;
     text-transform: uppercase;
     font-weight: 700;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     width: 600px;
     z-index: 99;
     transform: rotate(45deg);
@@ -297,9 +318,27 @@ img {
     top: 0;
     right: 0;
     left: 0;
-    padding: 3rem 3rem;
+    padding: 3rem;
+    z-index: 9999;
+
+
+    @media (max-width: 737px) {
+        padding: .65rem;
+        background-color: colors.$primary-black-2;
+        top: unset;
+        left: unset;
+        right: 2rem;
+        bottom: 5%;
+        border-radius: 50%;
+    }
 
     &>svg {
         font-size: 5rem;
+
+        @media (max-width: 737px) {
+            font-size: 3.5rem;
+            color: colors.$color-green-2;
+
+        }
     }
 }

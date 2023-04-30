@@ -13,6 +13,13 @@ main {
     transform: translate(-50%, -50%);
     display: flex;
     flex-direction: column;
+
+    @media (max-width: 737px) {
+        left: unset;
+        top: 25%;
+        transform: none;
+        padding: 2rem;
+    }
 }
 
 .about-link {
@@ -27,6 +34,11 @@ main {
     position: absolute;
     bottom: 50%;
     left: 0;
+
+    @media (max-width: 737px) {
+        bottom: 5%;
+        flex-direction: row;
+    }
 
     &>li {
         display: flex;
