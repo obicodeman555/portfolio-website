@@ -8,6 +8,7 @@ import fglcImage from "../assets/fglch-grap.png";
 import safepayGrab from "../assets/safepay-grab.png";
 
 import { Link } from 'react-router-dom';
+import Header from '../components/header/Header';
 
 
 const projects = [
@@ -66,9 +67,7 @@ const Work = () => {
 
     return (
         <div className='works'>
-            <header className="portfolio-header">
-                <Icon icon="ci:hamburger-lg" />
-            </header>
+            <Header />
             <div className='ribbon'>
                 <Link to={""}>
                     follow on github

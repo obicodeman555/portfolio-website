@@ -309,36 +309,3 @@ img {
         }
     }
 }
-
-.portfolio-header {
-    position: fixed;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    top: 0;
-    right: 0;
-    left: 0;
-    padding: 3rem;
-    z-index: 9999;
-
-
-    @media (max-width: 737px) {
-        padding: .65rem;
-        background-color: colors.$primary-black-2;
-        top: unset;
-        left: unset;
-        right: 2rem;
-        bottom: 5%;
-        border-radius: 50%;
-    }
-
-    &>svg {
-        font-size: 5rem;
-
-        @media (max-width: 737px) {
-            font-size: 3.5rem;
-            color: colors.$color-green-2;
-
-        }
-    }
-}

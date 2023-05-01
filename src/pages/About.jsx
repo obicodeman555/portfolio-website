@@ -1,14 +1,14 @@
-
+import "./about.scss";
 import { Icon } from '@iconify/react';
 import { Link } from 'react-router-dom';
-import "./about.scss";
+import Header from "../components/header/Header";
+
+
 
 const About = () => {
     return (
         <main>
-            <header className="portfolio-header">
-                <Icon icon="ci:hamburger-lg" />
-            </header>
+            <Header />
             <div className='ribbon'>
                 <Link to={""}>
                     follow on github
