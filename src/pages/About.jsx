@@ -2,7 +2,7 @@ import "./about.scss";
 import { Icon } from '@iconify/react';
 import { Link } from 'react-router-dom';
 import Header from "../components/header/Header";
-
+import cvPdf from "../assets/obinna-uko-ofe-CV.pdf"
 
 
 const About = () => {
@@ -54,9 +54,9 @@ const About = () => {
                     </Link>
                 </li>
                 <li>
-                    <Link to="mailto:obinnaukoofe@gmail.com">
-                        <Icon icon="ic:baseline-email" />
-                    </Link>
+                    <a href={cvPdf} download={"obinna-uko-ofe-CV"}>
+                        <Icon icon="academicons:cv" />
+                    </a>
                 </li>
             </ul>
 

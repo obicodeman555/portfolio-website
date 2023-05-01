@@ -40,7 +40,7 @@ const Header = () => {
 
                     <div className='close-overlay'>
                         <button type='button' onClick={(e) => overlayHandler(e)}>
-                            X
+                            <Icon icon="iconamoon:close-bold" />
                         </button>
                     </div>
                 </div>) : (<header className="portfolio-header">
