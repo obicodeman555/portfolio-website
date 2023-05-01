@@ -1,7 +1,10 @@
-import React from 'react'
+import React from 'react';
+import "./loader.scss"
 
 export const Loader = () => {
     return (
-        <div>Loader</div>
+        <div className='loader'>
+            <h3>Loading...</h3>
+        </div>
     )
 }

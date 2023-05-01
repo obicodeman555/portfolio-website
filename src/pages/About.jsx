@@ -10,7 +10,7 @@ const About = () => {
         <main>
             <Header />
             <div className='ribbon'>
-                <Link to={""}>
+                <Link to={"//github.com/obicodeman555"} target="_blank">
                     follow on github
                 </Link>
             </div>
@@ -44,12 +44,12 @@ const About = () => {
 
             <ul className='socials'>
                 <li>
-                    <Link to="">
+                    <Link to="//github.com/obicodeman555" target="_blank">
                         <Icon icon="pajamas:github" />
                     </Link>
                 </li>
                 <li>
-                    <Link to="">
+                    <Link to="//linkedin.com/in/obinna-ofe-8b07a8124" target="_blank">
                         <Icon icon="jam:linkedin" />
                     </Link>
                 </li>
