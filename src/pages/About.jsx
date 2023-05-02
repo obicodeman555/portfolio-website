@@ -22,7 +22,7 @@ const About = () => {
                 <div className='mt-2'>
                     <p className='text-paragraph'>
                         I, have been involved in the software industry for
-                        over 5 years, developing a complex line of business applications in various sectors.
+                        about 3 years, developing a complex line of business applications in various sectors.
 
                     </p>
                     <p className='text-paragraph'>
