@@ -1,7 +1,10 @@
 import React from 'react';
 import "./loader.scss"
+// import { useEffect } from 'react';
 
 const Loader = () => {
+
+
     return (
         <div className='loading'>
             <div className="loader">

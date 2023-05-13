@@ -1,6 +1,7 @@
 import { Suspense, lazy } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Loader from './components/loader/Loader';
+import PreLoader from './components/loader/PreLoader';
 
 const About = lazy(() => import("./pages/About"));
 const Contact = lazy(() => import("./pages/Contact"))
@@ -10,6 +11,7 @@ const ProjectDetails = lazy(() => import("./pages/ProjectDetails"))
 function App() {
   return (
     <>
+      <PreLoader />
       <Suspense fallback={<Loader />}>
         <Router>
           <Routes>

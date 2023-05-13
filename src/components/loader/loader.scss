@@ -1,11 +1,16 @@
 @use "../../sass/colors" as colors;
 
 .loading {
+    position: fixed;
+    top: 0;
+    width: 100%;
     background-color: colors.$primary-black;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    z-index: 9999;
+
 }
 
 
@@ -41,7 +46,7 @@
     }
 
     25% {
-        translate: 40px 0px;
+        translate: -40px 0px;
         scale: 0.5;
         rotate: -90deg;
     }
