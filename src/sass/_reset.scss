@@ -24,7 +24,7 @@ body,
     font-family: 'Mulish', sans-serif;
     overflow-x: hidden;
     background-color: colors.$primary-black;
-    color: colors.$color-grey-2;
+    color: colors.$color-grey-1;
     letter-spacing: .75px;
 }
 
@@ -47,11 +47,9 @@ button {
 
 .heading {
     margin-bottom: 1rem;
-    color: colors.$color-grey-1;
+    color: #FFB39B;
     font-weight: bolder;
     font-family: 'Rammetto One', cursive;
-    display: flex;
-    flex-direction: column;
 
     &-1 {
 

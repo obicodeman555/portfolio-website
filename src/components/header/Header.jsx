@@ -32,7 +32,7 @@ const Header = () => {
                             </li>
                             <li>
                                 <a href={cvPdf} download={"obinna-uko-ofe-CV"}>
-                                    <Icon icon="academicons:cv" />
+                                    CV
                                 </a>
                             </li>
                             <li>

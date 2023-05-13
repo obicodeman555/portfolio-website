@@ -24,8 +24,13 @@ main {
 
 .about-link {
     text-decoration: none;
-    color: colors.$color-grey-1;
+    color: colors.$color-green-2;
     font-weight: 800;
+    transition: color 200ms ease-in;
+
+    &:hover {
+        color: colors.$color-grey-2;
+    }
 }
 
 .socials {
@@ -87,4 +92,8 @@ main {
             background-color: colors.$color-blue;
         }
     }
+}
+
+.my-tech-stacks {
+    color: colors.$color-grey-2;
 }

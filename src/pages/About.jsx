@@ -15,7 +15,7 @@ const About = () => {
                 </Link>
             </div>
             <article className='about-me__text'>
-                <h1 className='heading-1'>
+                <h1 className='heading heading-1'>
                     <span>Welcome,</span>&nbsp;
                     <span>My name is Obinna Ofe.</span>
                 </h1>
@@ -27,11 +27,11 @@ const About = () => {
                     </p>
                     <p className='text-paragraph'>
                         My expertise surrounds using a wide range of
-                        JavaScript technologies, including Angular, ReactJS, VueJS, and TypeScript.
+                        JavaScript technologies, including <span className="my-tech-stacks">Angular, ReactJS, VueJS, and TypeScript</span>.
                     </p>
                     <p className='text-paragraph'>
                         Feel free to take a look at my latest projects on the &nbsp;
-                        <Link to="/work" className='about-link'>web portfolio page</Link>.
+                        <Link to="/portfolio" className='about-link'>web portfolio page</Link>.
                     </p>
                 </div>
 
