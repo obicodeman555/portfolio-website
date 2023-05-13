@@ -21,13 +21,13 @@ const About = () => {
                 </h1>
                 <div className='mt-2'>
                     <p className='text-paragraph'>
-                        I, have been involved in the software industry for
-                        about 3 years, developing a complex line of business applications in various sectors.
+                        I am based in Nigeria, and I, have been involved in the software industry for
+                        about 4 years, developing a complex line of business applications in various sectors.
 
                     </p>
                     <p className='text-paragraph'>
-                        My expertise surrounds using a wide range of
-                        JavaScript technologies, including <span className="my-tech-stacks">Angular, ReactJS, VueJS, and TypeScript</span>.
+                        My expertise surrounds full-stack development with JavaScript, with experience in coding on different platforms. When I am not
+                        working, I like reading up on emerging technologies and strive to be an active member of the software community.
                     </p>
                     <p className='text-paragraph'>
                         Feel free to take a look at my latest projects on the &nbsp;
