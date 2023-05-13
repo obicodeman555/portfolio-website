@@ -9,7 +9,7 @@ export const projects = [
 
     {
         projectName: "Valorise",
-        websiteLink: "https://valorise.co.uk",
+        websiteLink: "valorise.co.uk",
         readMoreLink: "valorise",
         imgSrc: `${valoriseLdPg}`,
         group: "website",
@@ -26,7 +26,7 @@ export const projects = [
     {
         projectName: "Brand Protection",
         readMoreLink: "brand-protection",
-        websiteLink: "http://bp.trustedpartners.software/login",
+        websiteLink: "bp.trustedpartners.software/login",
         imgSrc: `${bpImage}`,
         group: "web app",
         tools: ["React", "TypeScript", "REST APIs", "Redux"]
