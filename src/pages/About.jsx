@@ -63,7 +63,7 @@ const About = () => {
 
             <div className='link-to-page point-right'>
                 <div className='link-to-page__inner'>
-                    <Link to="/work">
+                    <Link to="/portfolio">
                         <span>portfolio</span>
                     </Link>
                 </div>

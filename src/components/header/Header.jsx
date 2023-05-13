@@ -4,6 +4,8 @@ import "./header.scss"
 import { Link } from 'react-router-dom';
 
 
+import cvPdf from "../../assets/obinna-uko-ofe-CV.pdf"
+
 const Header = () => {
     const [overlayIsHidden, setOverlayIsHidden] = useState(false);
 
@@ -23,13 +25,15 @@ const Header = () => {
                                 <Link to="/">About</Link>
 
                             </li>
-                            <li> <Link to="/work">Portfolio</Link></li>
+                            <li> <Link to="/portfolio">Portfolio</Link></li>
 
                             <li>
                                 <Link to="mailto:obinnaukoofe@gmail.com">Consulation</Link>
                             </li>
                             <li>
-                                <Link>Download CV</Link>
+                                <a href={cvPdf} download={"obinna-uko-ofe-CV"}>
+                                    <Icon icon="academicons:cv" />
+                                </a>
                             </li>
                             <li>
                                 <Link to="mailto:obinnaukoofe@gmail.com">Contact</Link>

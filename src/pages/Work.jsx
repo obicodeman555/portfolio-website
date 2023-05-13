@@ -1,54 +1,12 @@
 import React, { useState } from 'react'
 import { Icon } from '@iconify/react';
 import "./work.scss";
-import itsolutionsImage from "../assets/itsolution-grap.png";
-import enbeloImage from "../assets/enbelo-grap.png";
-import bpImage from "../assets/bp-grap.png";
-import fglcImage from "../assets/fglch-grap.png";
-import safepayGrab from "../assets/safepay-grab.png";
+import { projects } from '../projectData';
 
 import { Link } from 'react-router-dom';
 import Header from '../components/header/Header';
 
 
-const projects = [
-    {
-        projectName: "Enbelo",
-        linkTo: "enbelo.com",
-        imgSrc: `${enbeloImage}`,
-        group: "website",
-        tools: ["React", "CSS3", "Netlify", "Zoho"]
-    },
-    {
-        projectName: "ITSolutions",
-        linkTo: "itsolutions.app",
-        imgSrc: `${itsolutionsImage}`,
-        group: "web app",
-        tools: ["Next JS", "Cloudfare", "REST APIs", "React Query"]
-    },
-    {
-        projectName: "Francis Gilbert Law Chambers",
-        linkTo: "francisgilbertlawchambers.com",
-        imgSrc: `${fglcImage}`,
-        group: "website",
-        tools: ["React JS", "CSS3", "Netlify", "Zoho"]
-    },
-    {
-        projectName: "Brand Protection",
-        linkTo: "http://bp.trustedpartners.software/login",
-        imgSrc: `${bpImage}`,
-        group: "web app",
-        tools: ["React", "TypeScript", "REST APIs", "Redux"]
-    },
-    {
-        projectName: "Safe Pay",
-        linkTo: "https://www.figma.com/proto/xgix5U8SF51FaOtYHEMVXt/SafePayPOS?page-id=76%3A50&node-id=225-367&viewport=-349%2C205%2C1&scaling=scale-down",
-        imgSrc: `${safepayGrab}`,
-        group: "ui/ux",
-        tools: ["Figma"]
-    },
-
-]
 
 
 const Work = () => {
@@ -153,8 +111,8 @@ const Work = () => {
                                                     <span className='project-details__tools'>{project.tools.join(", ")}</span>
                                                 </span>
                                                 <span className='project-details__link'>
-                                                    <Link to={`//${project.linkTo}`}>
-                                                        View Project
+                                                    <Link to={`/project/${project.readMoreLink}`}>
+                                                        Read More
                                                         <Icon icon="ic:round-arrow-forward-ios" />
                                                     </Link>
                                                 </span>
@@ -178,8 +136,8 @@ const Work = () => {
                                                         <span className='project-details__tools'>{project.tools.join(", ")}</span>
                                                     </span>
                                                     <span className='project-details__link'>
-                                                        <Link to={`//${project.linkTo}`}>
-                                                            View Project
+                                                        <Link to={`/project/${project.readMoreLink}`} >
+                                                            Read more
                                                             <Icon icon="ic:round-arrow-forward-ios" />
                                                         </Link>
                                                     </span>

@@ -132,7 +132,7 @@
 
     position: relative;
     box-shadow: 8px 8px 0 rgba(0, 0, 0, .15);
-    height: 340px;
+    height: 320px;
 
     &:hover .project-details {
         opacity: 1;
@@ -142,12 +142,13 @@
 .project-image {
     display: flex;
     flex-direction: column;
-    height: 100%;
+    height: 320px;
 
     &>img {
         width: 100%;
         height: 100%;
-        object-fit: cover;
+
+
     }
 }
 
@@ -198,9 +199,10 @@
 
         &>a {
             display: flex;
+            border: 1px solid transparent;
             align-items: center;
             justify-content: center;
-            font-size: 1.25rem;
+            font-size: 1.5rem;
             font-weight: bold;
             background-color: colors.$color-green-2;
             padding: 1rem 2rem;
