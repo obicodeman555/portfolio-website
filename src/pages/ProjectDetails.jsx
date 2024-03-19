@@ -9,8 +9,6 @@ const ProjectDetails = () => {
     const projectDetails = projects.find(p => p.readMoreLink === name)
 
 
-    console.log(projectDetails)
-
     return (
         <div>
             <img src={projectDetails.imgSrc} alt="" />

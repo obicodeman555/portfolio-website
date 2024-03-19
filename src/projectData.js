@@ -1,7 +1,7 @@
-import itsolutionsImage from "./assets/itsolution-grap.png";
+// import itsolutionsImage from "./assets/itsolution-grap.png";
 import enbeloImage from "./assets/enbelo-grap.png";
-import bpImage from "./assets/bp-grap.png";
-import fglcImage from "./assets/fglch-grap.png";
+
+import vincoImage from "./assets/vinco-shot.png";
 import valoriseLdPg from "./assets/valorise-ldpg.png";
 
 
@@ -13,24 +13,17 @@ export const projects = [
         readMoreLink: "valorise",
         imgSrc: `${valoriseLdPg}`,
         group: "website",
-        tools: ["React", "CSS3", "Hostgator", "Netlify", "Github"]
+        tools: ["React", "CSS3", "Hostgator", "Netlify"]
     },
-    {
-        projectName: "ITSolutions",
-        readMoreLink: "itsolutions",
-        websiteLink: "itsolutions.app",
-        imgSrc: `${itsolutionsImage}`,
-        group: "web app",
-        tools: ["Next JS", "Cloudfare", "REST APIs", "React Query"]
-    },
-    {
-        projectName: "Brand Protection",
-        readMoreLink: "brand-protection",
-        websiteLink: "bp.trustedpartners.software/login",
-        imgSrc: `${bpImage}`,
-        group: "web app",
-        tools: ["React", "TypeScript", "REST APIs", "Redux"]
-    },
+    // {
+    //     projectName: "ITSolutions",
+    //     readMoreLink: "itsolutions",
+    //     websiteLink: "itsolutions.app",
+    //     imgSrc: `${itsolutionsImage}`,
+    //     group: "web app",
+    //     tools: ["Next JS", "Cloudfare", "REST APIs", "React Query"]
+    // },
+
     {
         projectName: "Enbelo",
         readMoreLink: "enbelo",
@@ -40,12 +33,12 @@ export const projects = [
         tools: ["React", "CSS3", "Netlify", "Zoho"]
     },
     {
-        projectName: "Francis Gilbert Law Chambers",
-        readMoreLink: "francis-gilbert-law-chambers",
-        websiteLink: "francisgilbertlawchambers.com",
-        imgSrc: `${fglcImage}`,
+        projectName: "Vinco & Sons Ltd",
+        readMoreLink: "vinco",
+        websiteLink: "https://vinco-8z1j.vercel.app/",
+        imgSrc: `${vincoImage}`,
         group: "website",
-        tools: ["React JS", "CSS3", "Netlify", "Zoho"]
+        tools: ["React JS", "CSS3(SCSS)", "Vercel", "NodeJS"]
     },
 
 ]

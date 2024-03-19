@@ -61,19 +61,6 @@ const Work = () => {
                             <Icon icon="devicon:css3" />
                             CSS3
                         </li>
-                        {/* <span>
-                            <Icon icon="vscode-icons:file-type-node" />
-                            Node JS
-                            </span>
-                            <span>
-                            <Icon icon="devicon:mongodb" />
-                                MongoDB
-                            </span>
-                            <span>
-                            <Icon icon="devicon:javascript" />
-                            PostgreSQL
-                            </span> */}
-
 
                     </ul>
                 </div>
