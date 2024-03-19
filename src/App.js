@@ -6,7 +6,7 @@ import PreLoader from './components/loader/PreLoader';
 const About = lazy(() => import("./pages/About"));
 const Contact = lazy(() => import("./pages/Contact"))
 const Work = lazy(() => import("./pages/Work"))
-const ProjectDetails = lazy(() => import("./pages/ProjectDetails"))
+
 
 function App() {
   return (
@@ -16,8 +16,7 @@ function App() {
         <Router>
           <Routes>
             <Route path='/' element={<About />} />
-            <Route path='portfolio' element={<Work />} />
-            <Route path="project/:name" element={<ProjectDetails />} />
+            <Route path='/portfolio' element={<Work />} />
             <Route path='contact' element={<Contact />} />
           </Routes>
         </Router>

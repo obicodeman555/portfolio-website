@@ -48,7 +48,7 @@ const Header = () => {
                         </button>
                     </div>
                 </div>) : (<header className="portfolio-header">
-                    <button type='button' onClick={overlayHandler}>
+                    <button type='button' onClick={(e) => overlayHandler(e)}>
                         <Icon icon="ci:hamburger-lg" />
                     </button>
                 </header>)

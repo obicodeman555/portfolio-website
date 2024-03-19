@@ -80,6 +80,7 @@
             padding: 1rem 2rem;
             color: colors.$color-grey-1;
             transition: background-color 200ms ease-in;
+            border-radius: 999px;
 
             @media (max-width: 737px) {
                 font-size: 1.65rem;
@@ -90,6 +91,7 @@
 
         &>a:hover {
             background-color: colors.$primary-black-2;
+            border-radius: 999px;
         }
     }
 }
