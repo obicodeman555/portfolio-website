@@ -98,7 +98,7 @@ const Work = () => {
                                                     <span className='project-details__tools'>{project.tools.join(", ")}</span>
                                                 </span>
                                                 <span className='project-details__link'>
-                                                    <Link to={`//${project.websiteLink}`}>
+                                                    <Link to={`//${project.websiteLink}`} target='__blank'>
                                                         View Project
                                                         <Icon icon="ic:round-arrow-forward-ios" />
                                                     </Link>
