@@ -35,7 +35,7 @@ export const projects = [
     {
         projectName: "Vinco & Sons Ltd",
         readMoreLink: "vinco",
-        websiteLink: "https://vinco-8z1j.vercel.app/",
+        websiteLink: "vinco-8z1j.vercel.app",
         imgSrc: `${vincoImage}`,
         group: "website",
         tools: ["React JS", "CSS3(SCSS)", "Vercel", "NodeJS"]
