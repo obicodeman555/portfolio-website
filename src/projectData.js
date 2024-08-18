@@ -1,6 +1,4 @@
-// import itsolutionsImage from "./assets/itsolution-grap.png";
 import enbeloImage from "./assets/enbelo-grap.png";
-
 import cardtonicImage from "./assets/cardtonic-img-1.png";
 import breetImage from "./assets/breet-img-1.png"
 import valoriseLdPg from "./assets/valorise-ldpg.png";
