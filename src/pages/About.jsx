@@ -21,13 +21,11 @@ const About = () => {
                 </h1>
                 <div className='mt-2'>
                     <p className='text-paragraph'>
-                        I am based in Nigeria, and I, have been involved in the software industry for
-                        about 4 years, developing a complex line of business applications in various sectors.
-
+                        I am highly experienced software engineer with over 10 years of experience in the industry. Currently working at The Tonic Technologies as a Senior Frontend Developer and Technical Architect, Obinna Ofe has a passion for creating innovative and user-friendly applications using cutting-edge technology such as React & Redux.
                     </p>
                     <p className='text-paragraph'>
-                        My expertise surrounds full-stack development with JavaScript, with experience in coding on different platforms. When I am not
-                        working, I like reading up on emerging technologies and strive to be an active member of the software community.
+                       Throughout my career, I have worked on numerous projects across various industries, ranging from healthcare to finance.  When I am not
+                       working, I like reading up on emerging technologies and strive to be an active member of the software community.
                     </p>
 
                     <p className='text-paragraph'>
